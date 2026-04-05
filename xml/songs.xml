@@ -7,7 +7,7 @@
         <genre>Melancholic</genre>
         <language>Hindi</language>
         <duration>3:45</duration>
-        <path>audio/Melancholic/Monta Re.mp3</path>
+        <path>audio/Monta Re.mp3</path>
         <cover>images/Monta Re.jpg</cover>
     </song>
     <song id="s2">
@@ -16,7 +16,7 @@
         <genre>Melancholic</genre>
         <language>English</language>
         <duration>3:12</duration>
-        <path>audio/Melancholic/Sailor Song - Gigi Perez.mp3</path>
+        <path>audio/Sailor Song - Gigi Perez.mp3</path>
         <cover>images/Sailor Song.jpg</cover>
     </song>
 
@@ -27,7 +27,7 @@
         <genre>Feel Good</genre>
         <language>Hindi</language>
         <duration>4:05</duration>
-        <path>audio/feel good/09 jutti meri.mp3</path>
+        <path>audio/09 jutti meri.mp3</path>
         <cover>images/Jutti Mer.jpg</cover>
     </song>
     <song id="s4">
@@ -36,7 +36,7 @@
         <genre>Feel Good</genre>
         <language>Tamil</language>
         <duration>4:30</duration>
-        <path>audio/feel good/Boomi-Enna-Suthudhe.mp3</path>
+        <path>audio/Boomi-Enna-Suthudhe.mp3</path>
         <cover>images/Boomi Enna Suthudhe.jpg</cover>
     </song>
     <song id="s5">
@@ -45,7 +45,7 @@
         <genre>Feel Good</genre>
         <language>Hindi</language>
         <duration>3:55</duration>
-        <path>audio/feel good/Chaudhary - (Raag.Fm).mp3</path>
+        <path>audio/Chaudhary - (Raag.Fm).mp3</path>
         <cover>images/chaudhary.jpg</cover>
     </song>
     <song id="s6">
@@ -54,7 +54,7 @@
         <genre>Feel Good</genre>
         <language>English</language>
         <duration>2:45</duration>
-        <path>audio/feel good/deeper_then_it_seems.mp3</path>
+        <path>audio/deeper_then_it_seems.mp3</path>
         <cover>images/Deeper Than It Seems.jpg</cover>
     </song>
     <song id="s7">
@@ -63,7 +63,7 @@
         <genre>Feel Good</genre>
         <language>Telugu</language>
         <duration>4:15</duration>
-        <path>audio/feel good/Inkem Inkem Inkem Kaavaale-320kbps.mp3</path>
+        <path>audio/Inkem Inkem Inkem Kaavaale-320kbps.mp3</path>
         <cover>images/Inkem Inkem Kaavaale.webp</cover>
     </song>
     <song id="s8">
@@ -72,7 +72,7 @@
         <genre>Feel Good</genre>
         <language>Tamil</language>
         <duration>3:40</duration>
-        <path>audio/feel good/Nee-Kavithaigala.mp3</path>
+        <path>audio/Nee-Kavithaigala.mp3</path>
         <cover>images/Nee Kavithaigala.jpg</cover>
     </song>
     <song id="s9">
@@ -81,7 +81,7 @@
         <genre>Feel Good</genre>
         <language>Tamil</language>
         <duration>4:45</duration>
-        <path>audio/feel good/Rowdy-Baby.mp3</path>
+        <path>audio/Rowdy-Baby.mp3</path>
         <cover>images/Rowdy Baby.jpg</cover>
     </song>
     <song id="s10">
@@ -90,7 +90,7 @@
         <genre>Feel Good</genre>
         <language>English</language>
         <duration>3:53</duration>
-        <path>audio/feel good/Shape of You - Ed Sheeran.mp3</path>
+        <path>audio/Shape of You - Ed Sheeran.mp3</path>
         <cover>images/shape of you.png</cover>
     </song>
     <song id="s11">
@@ -99,7 +99,7 @@
         <genre>Feel Good</genre>
         <language>Japanese</language>
         <duration>3:58</duration>
-        <path>audio/feel good/Suzume.mp3</path>
+        <path>audio/Suzume.mp3</path>
         <cover>images/suzume.jpg</cover>
     </song>
 
@@ -110,7 +110,7 @@
         <genre>Motivation</genre>
         <language>English</language>
         <duration>3:50</duration>
-        <path>audio/motivation/341.The Weeknd、Daft Punk - Starboy.mp3</path>
+        <path>audio/341.The Weeknd、Daft Punk - Starboy.mp3</path>
         <cover>images/star boy.jpg</cover>
     </song>
     <song id="s13">
@@ -119,7 +119,7 @@
         <genre>Motivation</genre>
         <language>Tamil</language>
         <duration>3:35</duration>
-        <path>audio/motivation/Aagasam-MassTamilan.io.mp3</path>
+        <path>audio/Aagasam-MassTamilan.io.mp3</path>
         <cover>images/agasam.jpg</cover>
     </song>
     <song id="s14">
@@ -128,7 +128,7 @@
         <genre>Motivation</genre>
         <language>English</language>
         <duration>3:24</duration>
-        <path>audio/motivation/Imagine Dragons - Believer (Audio).mp3</path>
+        <path>audio/Imagine Dragons - Believer (Audio).mp3</path>
         <cover>images/beliver.jpg</cover>
     </song>
     <song id="s15">
@@ -137,7 +137,7 @@
         <genre>Motivation</genre>
         <language>English</language>
         <duration>3:47</duration>
-        <path>audio/motivation/Unstoppable - Sia.mp3</path>
+        <path>audio/Unstoppable - Sia.mp3</path>
         <cover>images/unstoppable.jpg</cover>
     </song>
 
@@ -148,7 +148,7 @@
         <genre>Phonk</genre>
         <language>English</language>
         <duration>3:15</duration>
-        <path>audio/phonk/2 Phut Hon Funk (Slowed).mp3</path>
+        <path>audio/2 Phut Hon Funk (Slowed).mp3</path>
         <cover>images/2 Phut Hon Funk - Phonk Lord.jpg</cover>
     </song>
     <song id="s17">
@@ -157,7 +157,7 @@
         <genre>Phonk</genre>
         <language>English</language>
         <duration>2:45</duration>
-        <path>audio/phonk/MONTAGEM LADRAO Slowed.mp3</path>
+        <path>audio/MONTAGEM LADRAO Slowed.mp3</path>
         <cover>images/MONTAGEM LADRAO.jpg</cover>
     </song>
     <song id="s18">
@@ -166,7 +166,7 @@
         <genre>Phonk</genre>
         <language>English</language>
         <duration>3:50</duration>
-        <path>audio/phonk/PASSO BEM SOLTO (Super Slowed).mp3</path>
+        <path>audio/PASSO BEM SOLTO (Super Slowed).mp3</path>
         <cover>images/PASSO BEM SOLTO - Super Slowed.jpg</cover>
     </song>
 </playlist>
