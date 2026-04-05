@@ -1,0 +1,417 @@
+/* 
+   MelodyMix Music Website - Modern & Clean "Beginner-Friendly" Style
+   A balanced design: Simple enough to understand, but beautiful to browse.
+*/
+
+:root {
+    /* High-contrast, easy-to-read color palette */
+    --primary: #1DB954; 
+    --primary-hover: #1ED760;
+    --background: #121212;
+    --sidebar-bg: #000000;
+    --card-bg: #181818;
+    --card-hover: #222222; /* Very subtle hover */
+    --border: #282828; /* Clear structural borders */
+    --text: #FFFFFF;
+    --text-muted: #B3B3B3;
+    --player-height: 90px;
+    --sidebar-width: 240px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    display: flex;
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+/* --- SIDEBAR NAVIGATION --- */
+.sidebar {
+    width: var(--sidebar-width);
+    background-color: var(--sidebar-bg);
+    padding: 30px 20px;
+    height: 100vh;
+    position: fixed;
+    border-right: 1px solid var(--border);
+    z-index: 1000;
+}
+
+.logo {
+    color: var(--primary);
+    font-size: 26px;
+    font-weight: 800;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    margin-bottom: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-muted);
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 8px 0;
+    transition: 0.2s color;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: white;
+}
+
+.nav-links a.active {
+    color: var(--primary);
+}
+
+/* --- MAIN CONTENT AREA --- */
+.main-content {
+    margin-left: var(--sidebar-width);
+    flex-grow: 1;
+    padding: 40px;
+    padding-bottom: 130px; /* Room for player */
+}
+
+header {
+    margin-bottom: 40px;
+}
+
+.search-bar {
+    width: 400px;
+    padding: 12px 24px;
+    border-radius: 30px;
+    border: 1px solid var(--border);
+    background: #1a1a1a;
+    color: white;
+    outline: none;
+    font-size: 14px;
+    transition: border-color 0.2s;
+}
+
+.search-bar:focus {
+    border-color: #555;
+    background: #222;
+}
+
+/* --- HERO SECTION --- */
+.hero {
+    background-color: #1a1a1a;
+    padding: 50px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    border: 1px solid var(--border);
+}
+
+.hero h1 {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.hero p {
+    color: var(--text-muted);
+    font-size: 18px;
+    max-width: 650px;
+}
+
+/* --- SECTIONS & TITLES --- */
+.section-title {
+    margin-bottom: 24px;
+}
+
+.section-title h2 {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+/* --- SONG CARDS --- */
+.song-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 24px;
+}
+
+.song-card {
+    background: var(--card-bg);
+    padding: 16px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+    border: 1px solid var(--border);
+}
+
+.song-card:hover {
+    background: var(--card-hover);
+    transform: translateY(-5px);
+}
+
+.song-card img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.song-card h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.song-card p {
+    font-size: 14px;
+    color: var(--text-muted);
+}
+
+.play-btn-overlay {
+    position: absolute;
+    bottom: 80px;
+    right: 24px;
+    background: var(--primary);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.2s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+.song-card:hover .play-btn-overlay {
+    opacity: 1;
+}
+
+/* --- GENRE CARDS --- */
+.genre-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.genre-card {
+    height: 130px;
+    border-radius: 12px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.genre-card:hover {
+    transform: scale(1.05);
+}
+
+/* --- PLAYER BAR --- */
+.player-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: var(--player-height);
+    background: #181818;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    z-index: 10000;
+}
+
+.current-song {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.current-song img {
+    width: 56px;
+    height: 56px;
+    border-radius: 6px;
+}
+
+.current-song-info h4 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.current-song-info p {
+    font-size: 11px;
+    color: var(--text-muted);
+}
+
+.player-controls {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.control-btns {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.control-btns button {
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.control-btns button:hover {
+    color: white;
+}
+
+.play-pause {
+    background: white !important;
+    color: black !important;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-container {
+    width: 100%;
+    max-width: 550px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 11px;
+    color: var(--text-muted);
+}
+
+.progress-bar {
+    flex: 1;
+    height: 4px;
+    background: #333;
+    border-radius: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+.progress-fill {
+    height: 100%;
+    background: white;
+    border-radius: 2px;
+}
+
+.progress-bar:hover .progress-fill {
+    background: var(--primary);
+}
+
+.volume-controls {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+}
+
+.volume-bar-container {
+    width: 100px;
+    height: 4px;
+    background: #333;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.volume-fill {
+    height: 100%;
+    background: white;
+    width: 70%;
+    border-radius: 2px;
+}
+
+.volume-bar-container:hover .volume-fill {
+    background: var(--primary);
+}
+
+/* --- FAQ & FORMS --- */
+details {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    border: 1px solid var(--border);
+}
+
+summary { cursor: pointer; font-weight: 700; font-size: 16px; }
+
+.contact-container { max-width: 600px; }
+.form-group { margin-bottom: 24px; }
+.form-group label { display: block; font-weight: 700; font-size: 14px; margin-bottom: 8px; }
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 14px;
+    background: #1a1a1a;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: white;
+}
+
+.btn-submit {
+    background: var(--primary);
+    color: black;
+    padding: 14px 40px;
+    border: none;
+    border-radius: 30px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+/* --- FILTERS (EXPLORE PAGE) --- */
+.filters { display: flex; gap: 12px; margin-bottom: 30px; flex-wrap: wrap; }
+.filter-chip {
+    background: #222;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    border: 1px solid var(--border);
+}
+
+.filter-chip.active { background: white; color: black; border-color: white; }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .sidebar { width: 80px; padding: 30px 10px; }
+    .sidebar .logo span, .sidebar span { display: none; }
+    .main-content { margin-left: 80px; }
+    .volume-controls { display: none; }
+}
