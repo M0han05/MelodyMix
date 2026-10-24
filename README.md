@@ -1,6 +1,6 @@
 # MelodyMix - Music Playlist Website
 ---------------------------------------------------
-| live link : https://m0han05.github.io/MelodyMix/ |
+ live link : https://m0han05.github.io/MelodyMix/ 
 ----------------------------------------------------
 A premium, fully functional music platform built from scratch using HTML5, CSS3, JavaScript, and XML.
 
